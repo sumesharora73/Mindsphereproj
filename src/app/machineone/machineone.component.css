@@ -1,0 +1,100 @@
+.card
+  {
+    background-color:rgb(235,240,245);
+
+  }
+
+  .card-header
+  {
+    color: 	rgb(45,55,60);
+    font-family: Siemens Slab Roman;
+
+  }
+ 
+  .btn-primary
+  {
+    background-color: rgb(65,170,170);
+  }
+
+
+  #dataTable {
+    table-layout:auto; 
+    width: 100%;
+    *margin-left: -100px;
+    font-family: Siemens Slab Roman;
+    
+  }
+
+  tr:hover{
+    background-color: rgb(170,230	,245);
+    font-family: Siemens Slab Roman;
+  }
+
+  td:hover{
+    background-color: rgb(170,230	,245);
+  }
+  td {
+
+    border-color:  rgb(65,170,170);
+    padding:5px;
+    width:100px;
+    font-family: Siemens Slab Roman;
+    margin-left: 50px;
+  }
+  th {
+   
+    border-color:  rgb(0,0,0);
+    background-color: rgb(65,170,170);
+    font-family: Siemens Slab Roman;
+    padding:5px;
+    width:200px;
+   
+  }
+  
+  .hard_left {
+    
+    position:absolute;
+    *position: relative; /*ie7*/
+    left:0; 
+    width:150px;
+    padding:5px;
+    font-family: Siemens Slab Roman;
+    
+    
+  }
+  .hard_left:hover
+  {
+    background-color:  rgb(170,230	,245);
+  }
+
+
+  .outer {
+   position: relative;
+    width:600px; 
+  }
+  .inner {
+    overflow-x:scroll;
+    overflow-y:visible;
+     width:1000px; 
+    margin-left:190px;
+  }
+.Rowheader{
+  border-color:  rgb(0,0,0);
+    background-color: rgb(65,170,170);
+    font-family: Siemens Slab Roman;
+    padding: 5px;
+    width: 350px;
+}
+
+.Rowheader:hover
+{
+  background-color:  rgb(170,230	,245);
+}
+  .btn-primary
+  {
+    background-color: rgb(65,170,170);
+  }
+   .h
+  {
+  color:rgb(65,170,170);
+  }

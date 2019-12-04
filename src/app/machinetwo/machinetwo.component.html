@@ -1,0 +1,261 @@
+
+              <div class="card">
+                <div class="card-header">
+                    
+                    <p>MACHINE NO : MT-0165 </p> 
+                    <p>MACHINE NAME : MP5</p>
+                  </div>
+                
+                  <div class="card-body">
+                              
+                        <div class="outer">
+                          
+                           <div  class="inner">
+                                  <div class="table-hover">
+                           <table  id="dataTable"  class=" table-bordered table-hover " >
+                                          <tr>
+                                            <th id="#par" class="hard_left">PARTICULARS</th>
+                                            <td class="Rowheader" *ngFor="let t1 of filtered">{{t1.endtime|date:"MMM d,yy"}}</td>
+                                            <td class="Rowheader" *ngFor="let t2 of filtered2">{{t2.endtime|date:"MMM d,yy"}}</td>
+                                            <td class="Rowheader" *ngFor="let t2 of filtered3">{{t2.endtime|date:"MMM d,yy"}}</td>
+                                            <td class="Rowheader" *ngFor="let t2 of filtered4">{{t2.endtime|date:"MMM d,yy"}}</td>
+                                            <td class="Rowheader" *ngFor="let t2 of filtered5">{{t2.endtime|date:"MMM d,yy"}}</td>
+                                            <td class="Rowheader" *ngFor="let t2 of filtered6">{{t2.endtime|date:"MMM d,yy"}}</td>
+                                            <td class="Rowheader" *ngFor="let t2 of filtered7">{{t2.endtime|date:"MMM d,yy"}}</td>
+                                            <td class="Rowheader" *ngFor="let t2 of filtered8">{{t2.endtime|date:"MMM d,yy"}}</td>
+                                            <td class="Rowheader" *ngFor="let t2 of filtered9">{{t2.endtime|date:"MMM d,yy"}}</td>
+                                            <td class="Rowheader" *ngFor="let t2 of filtered10">{{t2.endtime|date:"MMM d,yy"}}</td>
+                                            <td class="Rowheader">total</td>
+                                           
+                                            <td class="Rowheader" >Minuts/Month</td>
+                                            <td class="Rowheader" >Hour/Month</td>
+                                            
+                                            
+                                          </tr>
+                                             <tr>
+                                               <th class="hard_left">Idle Time</th>
+                                               <td  class="rowdata"   *ngFor="let data of filtered">{{data.Idle_Time.maxvalue}}</td>
+                                               <td  class="rowdata2" *ngFor="let data of filtered2">{{data.Idle_Time.maxvalue}}</td>
+                                               <td  class="rowdata2" *ngFor="let data of filtered3">{{data.Idle_Time.maxvalue}}</td>
+                                               <td  class="rowdata2" *ngFor="let data of filtered4">{{data.Idle_Time.maxvalue}}</td>
+                                               <td  class="rowdata2" *ngFor="let data of filtered5">{{data.Idle_Time.maxvalue}}</td>
+                                               <td  class="rowdata2" *ngFor="let data of filtered6">{{data.Idle_Time.maxvalue}}</td>
+                                               <td  class="rowdata2" *ngFor="let data of filtered7">{{data.Idle_Time.maxvalue}}</td>
+                                               <td  class="rowdata2" *ngFor="let data of filtered8">{{data.Idle_Time.maxvalue}}</td>
+                                               <td  class="rowdata2" *ngFor="let data of filtered9">{{data.Idle_Time.maxvalue}}</td>
+                                               <td  class="rowdata2" *ngFor="let data of filtered10">{{data.Idle_Time.maxvalue}}</td>
+                                               
+                                               <td id="totalmarks"></td>
+                                              
+                                               <td id="sub"></td>
+                                               <td id="cal"></td>
+                                             </tr>
+                                             <tr>
+                                                <th class="hard_left">Production Auto</th>
+                                                <td class="rowdata" *ngFor="let p of filtered">{{p. Production_Auto.maxvalue}}</td>
+                            
+                                                <td class="rowdata2" *ngFor="let p of filtered2">{{p. Production_Auto.maxvalue}}</td>
+                                               
+                                                <td class="rowdata2" *ngFor="let p of filtered3">{{p. Production_Auto.maxvalue}}</td>
+                                                <td class="rowdata2" *ngFor="let p of filtered4">{{p. Production_Auto.maxvalue}}</td>
+                                                <td class="rowdata2" *ngFor="let p of filtered5">{{p. Production_Auto.maxvalue}}</td>
+                                                <td class="rowdata2" *ngFor="let p of filtered6">{{p. Production_Auto.maxvalue}}</td>
+                                                <td class="rowdata2" *ngFor="let p of filtered7">{{p. Production_Auto.maxvalue}}</td>
+                                                <td class="rowdata2" *ngFor="let p of filtered8">{{p. Production_Auto.maxvalue}}</td>
+                                                <td class="rowdata2" *ngFor="let p of filtered9">{{p. Production_Auto.maxvalue}}</td>
+                                                <td class="rowdata2" *ngFor="let p of filtered10">{{p. Production_Auto.maxvalue}}</td>
+                                                <td id="totalmarks"></td>
+                                                
+                                                <td id="sub"></td>
+                                                <td id="cal"></td>
+                                                
+                                              </tr>
+                                        
+                                              <tr>
+                                                  <th class="hard_left">Setting Time</th>
+                                                  <td class="rowdata"  *ngFor="let settime of filtered">{{settime.Setting_Time.maxvalue}}</td>
+                                                  
+                                                  <td class="rowdata2"  *ngFor="let settime of filtered2">{{settime.Setting_Time.maxvalue}}</td>
+                                                 
+                                                  <td class="rowdata2"  *ngFor="let settime of filtered3">{{settime.Setting_Time.maxvalue}}</td>
+                                                  <td class="rowdata2"  *ngFor="let settime of filtered4">{{settime.Setting_Time.maxvalue}}</td>
+                                                  <td class="rowdata2"  *ngFor="let settime of filtered5">{{settime.Setting_Time.maxvalue}}</td>
+                                                  <td class="rowdata2"  *ngFor="let settime of filtered6">{{settime.Setting_Time.maxvalue}}</td>
+                                                  <td class="rowdata2"  *ngFor="let settime of filtered7">{{settime.Setting_Time.maxvalue}}</td>
+                                                  <td class="rowdata2"  *ngFor="let settime of filtered8">{{settime.Setting_Time.maxvalue}}</td>
+                                                  <td class="rowdata2"  *ngFor="let settime of filtered9">{{settime.Setting_Time.maxvalue}}</td>
+                                                  <td class="rowdata2"  *ngFor="let settime of filtered10">{{settime.Setting_Time.maxvalue}}</td>
+                                                  
+                                                  
+                                                  <td id="totalmarks"></td>
+                                                 
+                                                  <td id="sub"></td>
+                                                  <td id="cal"></td>
+                                                </tr>
+                                        
+                                                <tr>
+                                                    <th class="hard_left">Emergancy</th>
+                                                    <td class="rowdata"  *ngFor="let emer of filtered">{{emer.Emergency.maxvalue}}</td>
+                                                    <td class="rowdata2"  *ngFor="let emer of filtered2">{{emer.Emergency.maxvalue}}</td>
+                                                    <td class="rowdata2"  *ngFor="let emer of filtered3">{{emer.Emergency.maxvalue}}</td>
+                                                    <td class="rowdata2"  *ngFor="let emer of filtered4">{{emer.Emergency.maxvalue}}</td>
+                                                    <td class="rowdata2"  *ngFor="let emer of filtered5">{{emer.Emergency.maxvalue}}</td>
+                                                    <td class="rowdata2"  *ngFor="let emer of filtered6">{{emer.Emergency.maxvalue}}</td>
+                                                    <td class="rowdata2"  *ngFor="let emer of filtered7">{{emer.Emergency.maxvalue}}</td>
+                                                    <td class="rowdata2"  *ngFor="let emer of filtered8">{{emer.Emergency.maxvalue}}</td>
+                                                    <td class="rowdata2"  *ngFor="let emer of filtered9">{{emer.Emergency.maxvalue}}</td>
+                                                    <td class="rowdata2"  *ngFor="let emer of filtered10">{{emer.Emergency.maxvalue}}</td>
+                                                    <td id="totalmarks"></td>
+                                                   
+                        
+                                                    <td id="sub"></td>
+                                                    <td id="cal"></td>
+                                                  </tr>
+                                        
+                                                <tr>
+                                                    <th class="hard_left">MDA</th>
+                                                    <td class="rowdata"  *ngFor="let mda of filtered">{{mda.MDA_Mode.maxvalue}}</td>
+                                                    <td class="rowdata2" *ngFor="let mda of filtered2">{{mda.MDA_Mode.maxvalue}}</td>
+                                                    <td class="rowdata2" *ngFor="let mda of filtered3">{{mda.MDA_Mode.maxvalue}}</td>
+                                                    <td class="rowdata2" *ngFor="let mda of filtered4">{{mda.MDA_Mode.maxvalue}}</td>
+                                                    <td class="rowdata2" *ngFor="let mda of filtered5">{{mda.MDA_Mode.maxvalue}}</td>
+                                                    <td class="rowdata2" *ngFor="let mda of filtered6">{{mda.MDA_Mode.maxvalue}}</td>
+                                                    <td class="rowdata2" *ngFor="let mda of filtered7">{{mda.MDA_Mode.maxvalue}}</td>
+                                                    <td class="rowdata2" *ngFor="let mda of filtered8">{{mda.MDA_Mode.maxvalue}}</td>
+                                                    <td class="rowdata2" *ngFor="let mda of filtered9">{{mda.MDA_Mode.maxvalue}}</td>
+                                                    <td class="rowdata2" *ngFor="let mda of filtered10">{{mda.MDA_Mode.maxvalue}}</td>
+                                                    <td id="totalmarks"></td>
+                                                    
+                                                    <td id="sub"></td>
+                                                    <td id="cal"></td>
+                                                  </tr>
+                                                  <tr>
+                                                      <th class="hard_left">Breakdown Time</th>
+                                                      <td class="rowdata" *ngFor="let mda of filtered">{{mda.MDA_Mode.maxvalue}}</td>
+                                                      <td class="rowdata2" *ngFor="let bkdt of filtered2">{{bkdt.Breakdown_Time.maxvalue}}</td>
+                                                      <td class="rowdata2" *ngFor="let mda of filtered3">{{mda.MDA_Mode.maxvalue}}</td>
+                                                      <td class="rowdata2" *ngFor="let mda of filtered4">{{mda.MDA_Mode.maxvalue}}</td>
+                                                      <td class="rowdata2" *ngFor="let mda of filtered5">{{mda.MDA_Mode.maxvalue}}</td>
+                                                      <td class="rowdata2" *ngFor="let mda of filtered6">{{mda.MDA_Mode.maxvalue}}</td>
+                                                      <td class="rowdata2" *ngFor="let mda of filtered7">{{mda.MDA_Mode.maxvalue}}</td>
+                                                      <td class="rowdata2" *ngFor="let mda of filtered8">{{mda.MDA_Mode.maxvalue}}</td>
+                                                      <td class="rowdata2" *ngFor="let mda of filtered9">{{mda.MDA_Mode.maxvalue}}</td>
+                                                      <td class="rowdata2" *ngFor="let mda of filtered10">{{mda.MDA_Mode.maxvalue}}</td>
+                                                      <td id="totalmarks"></td>
+                                                    
+                                                      <td id="sub"></td>
+                                                      <td id="cal"></td>
+                                                    </tr>
+                                                    <tr>
+                                            <tr>
+                                            <th class="hard_left">Break Time</th>
+                                            <td class="rowdata" *ngFor="let bkt of filtered">{{bkt.Break_Time.maxvalue}}</td>
+                                                       
+                                            <td class="rowdata2" *ngFor="let bkt of filtered2">{{bkt.Break_Time.maxvalue}}</td>
+                                            <td class="rowdata2" *ngFor="let bkt of filtered3">{{bkt.Break_Time.maxvalue}}</td>
+                                            <td class="rowdata2" *ngFor="let bkt of filtered4">{{bkt.Break_Time.maxvalue}}</td>
+                                            <td class="rowdata2" *ngFor="let bkt of filtered5">{{bkt.Break_Time.maxvalue}}</td>
+                                            <td class="rowdata2" *ngFor="let bkt of filtered6">{{bkt.Break_Time.maxvalue}}</td>
+                                            <td class="rowdata2" *ngFor="let bkt of filtered7">{{bkt.Break_Time.maxvalue}}</td>
+                                            <td class="rowdata2" *ngFor="let bkt of filtered8">{{bkt.Break_Time.maxvalue}}</td>
+                                            <td class="rowdata2" *ngFor="let bkt of filtered9">{{bkt.Break_Time.maxvalue}}</td>
+                                            <td class="rowdata2" *ngFor="let bkt of filtered10">{{bkt.Break_Time.maxvalue}}</td>
+                                            
+                                                        <td id="totalmarks"></td>
+                                                       
+                                                        <td id="sub"></td>
+                                                        <td id="cal"></td>
+                                                      </tr>
+                                        <tr>
+                                                      <th class="hard_left">Job Load / Unload</th>
+
+                                                      <td class="rowdata" *ngFor="let j of filtered">{{j.Job_Load_Unload_Time.maxvalue}}</td>
+                                                      
+                                                      <td class="rowdata2" *ngFor="let jbload of filtered2">{{jbload.Job_Load_Unload_Time.maxvalue}}</td>
+                                                      <td class="rowdata2" *ngFor="let jbload of filtered3">{{jbload.Job_Load_Unload_Time.maxvalue}}</td>
+                                                      <td class="rowdata2" *ngFor="let jbload of filtered4">{{jbload.Job_Load_Unload_Time.maxvalue}}</td>
+                                                      <td class="rowdata2" *ngFor="let jbload of filtered5">{{jbload.Job_Load_Unload_Time.maxvalue}}</td>
+                                                     
+                                                      <td class="rowdata2" *ngFor="let jbload of filtered6">{{jbload.Job_Load_Unload_Time.maxvalue}}</td>
+                                                      <td class="rowdata2" *ngFor="let jbload of filtered7">{{jbload.Job_Load_Unload_Time.maxvalue}}</td>
+                                                      <td class="rowdata2" *ngFor="let jbload of filtered8">{{jbload.Job_Load_Unload_Time.maxvalue}}</td>
+                                                      <td class="rowdata2" *ngFor="let jbload of filtered9">{{jbload.Job_Load_Unload_Time.maxvalue}}</td>
+                                                      <td class="rowdata2" *ngFor="let jbload of filtered10">{{jbload.Job_Load_Unload_Time.maxvalue}}</td>
+                                                        <td id="totalmarks"></td>
+                                                      
+                                                        <td id="sub"></td>
+                                                        <td id="cal"></td>
+                                                      </tr>
+                                                      
+                                          </table>
+                                         
+                                </div>
+                                </div>
+                                          
+                               
+                      
+                       </div>
+                       </div>
+                        
+                      </div>
+                     
+                      <div id="reportPage">
+                      
+                        <div class="card">
+                                <div class="card-header">
+                                  <h6> MP5 PIE CHART</h6>
+                                </div>
+                                <div class="card-body">
+                               
+                                    
+                                
+                                    <div class="chart-container" style="position: relative; height:40vh; width:50vw;  margin-left: auto;
+                                    margin-right: auto;">
+                     
+                                            <canvas baseChart
+                                                  [data]="pieChartData"
+                                                  [labels]="pieChartLabels"
+                                                  [chartType]="pieChartType"
+                                                  [colors]="pieChartColors"
+                                                  (chartHover)="chartHovered($event)"
+                                                  (chartClick)="chartClicked($event)">
+                                                
+                                                
+                                                </canvas>
+                                              </div>
+                                              <footer class="footer"><cite title="click to download">   <a href="#" class="btn btn-primary"(click)="downloadCanvaspdf($event)">download Image</a> <a href="#" class="btn btn-primary"(click)="downloadCanvas($event)"style="margin-left: 10px;">download pdf</a>  </cite></footer>
+                                
+                                </div>
+                              </div>
+                              <div class="card">
+            
+            
+                                <div class="card-header">
+                                  <h6>MP5 BAR CHART</h6>
+                                </div>
+                                <div class="card-body">
+                                
+            
+                              <div class="chart-container" style="position: relative; height:40vh; width:40vw; margin-left: auto;
+                              margin-right: auto;">
+                               
+                                <canvas baseChart
+                                        [datasets]="barChartData"
+                                        [labels]="barChartLabels"
+                                        [options]="barChartOptions"
+                                        [colors]="barChartColors"
+                                        [legend]="barChartLegend"
+                                        [chartType]="barChartType">
+                                </canvas>
+                              </div>
+                              <footer class="footer"><cite title="click to download">   <a href="#" class="btn btn-primary"(click)="downloadCanvas($event)" >download Image</a>   </cite></footer>
+                                  
+                                </div>
+                              
+            
+                </div>
+                           
+            </div>
+             
+           
+            

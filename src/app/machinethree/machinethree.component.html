@@ -1,0 +1,130 @@
+
+              <div class="card">
+                <div class="card-header">
+                    
+                    <p>MACHINE NO : MT-0165 </p> 
+                    <p>MACHINE NAME : TS-5</p>
+                  </div>
+                
+                  <div class="card-body">
+                      <div class="table-responsive" >         
+                        <div class="outer">
+                            <div  class="inner">
+                          
+                                  <div class="table-hover">
+                           <table  id="#dataTable"  class=" table-bordered table-hover " >
+                                          <tr>
+                                            <th id="#par" class="hard_left" >PARTICULARS</th>
+                                          
+                                            <td class="Rowheader"  *ngFor="let ind of datas ; let i = index">{{ind.endtime|date:"shortDate"}}</td>
+                                            
+                                          </tr>
+                                             <tr>
+                                               <th class="hard_left">Idle Time</th>
+                                               <td  *ngFor="let data of this.datas">{{data.Idle_Time.maxvalue}}</td>
+                                             </tr>
+                                             <tr>
+                                                <th class="hard_left">Production Auto</th>
+                                                <td *ngFor="let p of datas">{{p. Production_Auto.maxvalue}}</td>
+                                              </tr>
+                                        
+                                              <tr>
+                                                  <th class="hard_left">Setting Time</th>
+                                                  <td  *ngFor="let settime of datas">{{settime.Setting_Time.average}}</td>
+                                                </tr>
+                                        
+                                                <tr>
+                                                    <th class="hard_left">Emergancy</th>
+                                                    <td  *ngFor="let emer of datas">{{emer.Emergency.average}}</td>
+                                                  </tr>
+                                        
+                                                <tr>
+                                                    <th class="hard_left">MDA</th>
+                                                    <td  *ngFor="let mda of datas">{{mda.MDA_Mode.average}}</td>
+                                                  </tr>
+                                                  <tr>
+                                                      <th class="hard_left">Breakdown Time</th>
+                                                      <td  *ngFor="let bkdt of datas">{{bkdt.Breakdown_Time.average}}</td>
+                                                    </tr>
+                                                    <tr>
+                                            <tr>
+                                            <th class="hard_left">Break Time</th>
+                                                        <td  *ngFor="let bkt of datas">{{bkt.Break_Time.average}}</td>
+                                                      </tr>
+                                        <tr>
+                                                      <th class="hard_left">Job Load / Unload</th>
+                                                        <td  *ngFor="let jbload of datas">{{jbload.Job_Load_Unload_Time.average}}</td>
+                                                      </tr>
+                                                      
+                                          </table>
+                                </div>
+                                </div>
+                              
+                                          
+                               
+                      
+                       </div>
+                       </div>
+                        
+                      </div>
+                     
+                      <div id="reportPage">
+                      
+                        <div class="card">
+                                <div class="card-header">
+                                 <h6> TS-5 PIE CHART</h6>
+                                </div>
+                                <div class="card-body">
+                               
+                                    
+                                
+                                    <div class="chart-container" style="position: relative; height:auto; width:auto;  margin-left: auto;
+                                    margin-right: auto;">
+                     
+                                            <canvas baseChart
+                                                  [data]="pieChartData"
+                                                  [labels]="pieChartLabels"
+                                                  [chartType]="pieChartType"
+                                                  [colors]="pieChartColors"
+                                                  (chartHover)="chartHovered($event)"
+                                                  (chartClick)="chartClicked($event)">
+                                                
+                                                
+                                                </canvas>
+                                              </div>
+                                              <footer class="footer"><cite title="click to download">   <a href="#" class="btn btn-primary"(click)="downloadCanvaspdf($event)">download Image</a> <a href="#" class="btn btn-primary"(click)="downloadCanvas($event)"style="margin-left: 10px;">download pdf</a>  </cite></footer>
+                                
+                                </div>
+                              </div>
+                              <div class="card">
+            
+            
+                                <div class="card-header">
+                                  <h6>TS-5 BAR CHART</h6>
+                                </div>
+                                <div class="card-body">
+                                
+            
+                              <div class="chart-container" style="position: relative; height:auto; width:auto; margin-left: auto;
+                              margin-right: auto;">
+                               
+                                <canvas baseChart
+                                        [datasets]="barChartData"
+                                        [labels]="barChartLabels"
+                                        [options]="barChartOptions"
+                                        [colors]="barChartColors"
+                                        [legend]="barChartLegend"
+                                        [chartType]="barChartType">
+                                </canvas>
+                              </div>
+                              <footer class="footer"><cite title="click to download">   <a href="#" class="btn btn-primary"(click)="downloadCanvas($event)" >download Image</a>   </cite></footer>
+                                  
+                                </div>
+                              </div>
+                            </div> 
+            
+                           
+            </div>
+                                 
+            
+            

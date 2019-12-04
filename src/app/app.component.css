@@ -1,0 +1,92 @@
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:rgb(65,170,170);
+  }
+  .navbar-brand a img{
+    width:10px;
+    height: 5px;
+    display: inline-block;
+
+  }
+  ul.navbar li {float: left;}
+  
+  .navbar li a {
+    font-weight: normal;
+      border-radius: 0;
+      padding: 10px 10px;
+      font-size: 12px;
+      font-family: Siemens Slab Roman;
+
+      vertical-align: middle;}
+  
+  
+  .navbar li.right {float: right;}
+  
+
+  
+
+  .nav-item1
+  {
+    margin-right: 5px;
+    
+  }
+  .nav-item2
+  {
+    margin-right: 5px;
+  }
+  
+  .navbar2 li a {
+    font-weight: normal;
+    border-radius: 0;
+    padding: 10px 25px;
+    font-size: 20px;
+    font-family: Siemens Slab Roman;
+    background-color:rgb(65,170,170);
+    vertical-align: middle;
+  }
+
+
+  .navbar2 a.active-link{
+
+   color: white;
+
+  }
+
+
+
+  .card
+  {
+    font-family: Siemens Slab Roman;
+background-color:rgb(235,240,245);
+
+
+  }
+  .card-header{
+    font-family: Siemens Slab Roman;
+
+
+  }
+  .footer {
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:rgb(65,170,170);
+    color: rgb(0,0,0);
+    text-align: center;
+    font-family: Siemens Slab Roman;
+ }
+ .button.active{
+  background-color:  rgb(170,230	,245);
+}
+
+.footer1
+{
+ 
+  padding: 10px 15px;
+  background-color: rgb(65,170,170);
+  font-family: Siemens Slab Roman;
+}
